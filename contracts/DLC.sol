@@ -43,20 +43,20 @@ contract DLCToken is BEP20Token{
          */
 
        
-        // amount = 40000000;
-        // BEP20Token.transfer(privateSaleWallet, amount * amountWithDecimal);
+        amount = 40000000;
+        BEP20Token.transfer(privateSaleWallet, amount * amountWithDecimal);
         
-        // //Partner allocation
-        // amount = 250000000;
-        // BEP20Token.transfer(partnerWallet, amount * amountWithDecimal);
+        //Partner allocation
+        amount = 250000000;
+        BEP20Token.transfer(partnerWallet, amount * amountWithDecimal);
         
-        // //Team allocation
-        // amount = 250000000; 
-        // BEP20Token.transfer(teamWallet, amount * amountWithDecimal);
+        //Team allocation
+        amount = 250000000; 
+        BEP20Token.transfer(teamWallet, amount * amountWithDecimal);
         
-        // //Marketing wallet allocation
-        // amount = 250000000; 
-        // BEP20Token.transfer(marketingWallet, amount * amountWithDecimal);
+        //Marketing wallet allocation
+        amount = 250000000; 
+        BEP20Token.transfer(marketingWallet, amount * amountWithDecimal);
     }
     
     /**
