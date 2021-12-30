@@ -18141,12 +18141,12 @@
         }
       },
       "links": {},
-      "address": "0x363D878Ee273D478D1460250849c06Da605cb338",
-      "transactionHash": "0x775ddae84caf137a5d003825b66fe8fad2aeb9850fad9653e62f635b7bf13fed"
+      "address": "0xB02F292aA14c2628d6B37a406B6D985b8976E821",
+      "transactionHash": "0x59fc4c0d276c8b3e9436ed5708bb3f25a88c8502642cf1948d2c8a9316517c52"
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2021-12-29T04:11:00.657Z",
+  "updatedAt": "2021-12-30T03:36:29.418Z",
   "networkType": "ethereum",
   "devdoc": {
     "details": "Implementation of DLC TOKEN This contract is base on the Implementation of BEP20Token and 5ROI TOKEN src: https://github.com/binance-chain/BEPs/blob/master/BEP20.md src: https://github.com/5roiglobal/smartcontract",

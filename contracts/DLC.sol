@@ -11,7 +11,7 @@ import "./BEP20Token.sol";
  */
  
 
-contract DLCToken is BEP20Token{
+contract DLCToken  is BEP20Token{
     using SafeMath for uint256;
 
     /**

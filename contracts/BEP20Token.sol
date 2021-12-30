@@ -128,7 +128,7 @@ contract BEP20Token is Context, IBEP20, Ownable, Pausable {
   string private _symbol;
   string private _name;
 
-  constructor(string memory name,string memory symbol, uint256 supply, uint8 decimals) public {
+  constructor(string memory name,string memory symbol, uint256 supply, uint8 decimals) public payable {
     _name = name;
     _symbol = symbol;
     _decimals = decimals;
