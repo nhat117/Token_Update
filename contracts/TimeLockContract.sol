@@ -45,7 +45,7 @@ contract TimeLockContract {
         uint unit =  3* MONTH;
         uint8 percentage = 5;
 
-        uint256 amount = DLCToken(dlc).balanceOf(msg.sender); 
+        uint256 amount = IBEP20(dlc).balanceOf(msg.sender); 
         for(uint i = 0; i < period; i ++) {
             timeLine.push(block.timestamp + i * unit);
         }
@@ -66,15 +66,12 @@ contract TimeLockContract {
      * @param _amount The amount to be transferred.
      */
 
-    function transferAndLock(address _receiver, uint256 _amount, uint256 _releaseDate) public returns (bool success) {
+    function transferAndLock(address _receiver, uint256 _amount, uint256 _releaseDate) internal returns (bool success) {
         require(msg.sender == owner);
-        DLCToken(dlc).transfer(_receiver,_amount);
-        
+        IBEP20(dlc).transferFrom(msg.sender,_receiver,_amount);
         if (lockList[_receiver].length==0) lockedAddressList.push(_receiver);
-        
         LockItem memory item = LockItem({amount:_amount, releaseDate:_releaseDate});
         lockList[_receiver].push(item);
-    
         return true;
     }
 }
