@@ -12,6 +12,7 @@ contract TimeLockContract {
     uint constant YEAR = 31556926;
     
 
+
      struct LockItem {
         uint256  releaseDate;
         uint256  amount;
@@ -19,6 +20,7 @@ contract TimeLockContract {
 
     address private  owner;  
     address private dlc;
+
 
     //Utility variables for transfer and lock
     
